@@ -1,0 +1,307 @@
+body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 100%;
+    color: black;
+    background-color: white;
+}
+
+/* TOP HEADING LAYOUT */
+.topHeadingLayout {
+    margin-left: 2vw;
+    font-size: 5vh;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    border-right: 0.5vw solid black; 
+    border-bottom: 0.5vw solid black; 
+    display: inline-block; 
+    padding-right: 1%; 
+    padding-bottom: 1%; 
+}
+.blackBackground{
+    background-color: black; 
+    color: white; 
+    padding: 0.6vw;
+    box-shadow: -0.6vw -0.6vw black;
+}
+.distance{
+    margin-left: 0.5vw;
+    margin-right: 1.5vw;
+}
+
+
+/* OFFER LIST START PAGE */
+.offerListContainer{
+    display: flex;
+    justify-content: center;
+}
+.offerList {
+    border-right: 1vh solid black;
+    border-left: 1vh solid black;
+    height: 35vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+.offerListItem1 {
+    font-size: 3vh;
+    margin-bottom: 1%;
+}
+.offerListItem2 {
+    font-size: 3vh;
+    margin-bottom: 1%;
+    padding: 0.5vw;
+}
+.offerListItem3 {
+    font-size: 3vh;
+    margin-bottom: 1%;
+
+}
+.offerListItem4 {
+    font-size: 3vh;
+    margin-bottom: 1%;
+    padding: 0.5vw;
+
+}
+.offerListItem5 {
+    font-size: 3vh;
+
+}
+
+
+/* HOVER BAR END BUTTON START PAGE + HORIZONTAL LINE */
+.center-container {
+    display: flex;
+    text-align: center; /* Zentriert den Inhalt horizontal */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+    width: 100vw;
+    height: 10vh;
+}
+#hover-bar-button-end {
+    position: absolute;
+    font-size: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: #ffffff; /* Hintergrundfarbe des Buttons */
+    color: rgb(0, 0, 0); /* Textfarbe */
+    border: 0.2vh solid;
+    border-color: black;
+    cursor: pointer; /* Zeigercursor bei Hover */
+    overflow: hidden; /* Versteckt das ::before Pseudo-Element, wenn es außerhalb ist */
+    transition: color 0.3s, background-color 0.3s; /* Sanfter Farbübergang */
+    transition: transform 0.3s, box-shadow 1s;
+}
+#hover-bar-button-end::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Startbreite des Balkens */
+    height: 0.5vh; /* Höhe des Balkens */
+    background-color: #000000; /* Farbe des Balkens */
+    transition: width 0.3s; /* Übergangseffekt für die Breite */
+}
+#hover-bar-button-end:hover::before {
+    width: 100%; /* Füllt den Balken horizontal aus */
+}
+.horizontal-line{
+    border-top: 0.2vh solid #000000;
+}
+
+
+
+/* CALORIE EXAMPLES DIV START PAGE*/
+#calorieExampleHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    font-size: 4vh;
+}
+.container{
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100vw;
+}
+.div-container {
+    padding-right: 2vw;
+    margin-left: 2vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+.paragraphContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+.matching-height-paragraph {
+    border-right: 1vh solid black;
+    border-bottom: 1vh solid black;
+    font-size: 3vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.joggingPic {
+    height: 100%;
+    width: 24%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 2%;
+    transition: transform 0.3s
+}
+.joggingPic:hover{
+    transform: scale(1.1);
+}
+.EnergyExParagraph {
+    padding-left: 5%;
+}
+.calorieEnergyEx {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20vh;
+    font-size: 3vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    transition: transform 0.3s, box-shadow 1s;
+}
+.calorieEnergyEx:hover{
+    transform: scale(1.1); 
+}
+
+
+
+
+
+
+
+#explanation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 7%;
+    margin-bottom: 9%;
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+.goalButtons {
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+
+}
+
+#loseWeight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px black;
+    font-size: 3vh;
+    background-color: rgba(96, 54, 19, 0.9);
+    box-shadow: 3px 3px 5px rgba(96, 54, 19, 0.9);
+    transition: transform 0.5s, box-shadow 1s;
+    border-width: 0.3vh;
+    border-color: rgba(96, 54, 19, 0.9);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#loseWeight:hover {
+    box-shadow: 10px 10px 10px rgba(96, 54, 19, 0.9);
+    transform: scale(1.2); 
+}
+
+#gainWeight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px black;
+    font-size: 3vh;
+    background-color: rgba(96, 54, 19, 0.9);
+    box-shadow: 3px 3px 5px rgba(96, 54, 19, 0.9);
+    transition: transform 0.5s, box-shadow 1s;
+    border-width: 0.3vh;
+    border-color: rgba(96, 54, 19, 0.9);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#gainWeight:hover {
+    box-shadow: 10px 10px 10px rgba(96, 54, 19, 0.9);
+    transform: scale(1.2); 
+}
+
+#maintainWeight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px black;
+    font-size: 3vh;
+    background-color: rgba(96, 54, 19, 0.9);
+    box-shadow: 3px 3px 5px rgba(96, 54, 19, 0.9);
+    transition: transform 0.5s, box-shadow 1s;
+    border-width: 0.3vh;
+    border-color: rgba(96, 54, 19, 0.9);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#maintainWeight:hover {
+    box-shadow: 10px 10px 10px rgba(96, 54, 19, 0.9);
+    transform: scale(1.2); 
+}
+
+
+
+
+
+.getStarted{
+    display: flex;
+    justify-content: center;
+    font-size: 3.5vh;
+    text-decoration: solid;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+
+
